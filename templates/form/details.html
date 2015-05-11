@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul>
+    {% for list in users %}
+    <li>{{ list.name }}</li>
+    {% endfor %}
+</ul>
+<h2>Details of registered users</h2>
+Name: {{ name }} <br>
+Age: {{ age }}<br>
+Email: {{ email }} <br>
+Location: {{ location }}
+</body>
+</html>

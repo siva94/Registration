@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Home-page</title>
+</head>
+<body>
+<h1 align="center">User Registration</h1>
+<form action="{% url 'details'%}" method=post>
+    {% csrf_token %}
+    <br>
+    <br>
+    <br>
+    <table align="center">
+        <tr>
+            <td> Name:</td>
+            <td> <input type="text" name="name"/></td>
+        </tr>
+         <tr>
+            <td> Age:</td>
+            <td> <input type="text" name="age"/></td>
+        </tr>
+         <tr>
+            <td> email:</td>
+            <td><input type="text" name="email"/></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="password" name="pass"/></td>
+        </tr>
+         <tr>
+            <td>Location:</td>
+            <td><input type="text" name="location"/></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center"><input type="submit"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
